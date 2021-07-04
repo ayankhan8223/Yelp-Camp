@@ -1,0 +1,47 @@
+<% layout('/layouts/boilerplate') %>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <%=msg  %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div id="cluster-map"></div>
+    <h1>All CAMPGROUND</h1>
+
+
+    <% for(let camp of Camp) {%>
+
+        <div class="card" mb-3>
+            <div class="row">
+                <div class="col-md-4">
+                    <% if(camp.image.length){ %>
+                        <img class="img-fluid" alt="" src='<%= camp.image[0].url %>'>
+                        <% }else{ %>
+                            <img class="img-fluid" alt="" src='https://res.cloudinary.com/dgwj4ybds/image/upload/v1624391779/yelpcamp/kcwgoqaz8gudrhzmgxr7.jpg'>
+                            <% } %>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%=camp.title %>
+                        </h5>
+
+                        <p class="card-text">
+                            <%=camp.description %>
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"><%=camp.location %></small>
+                        </p>
+                        <a class="btn btn-primary" href="/campground/<%=camp._id%>">view <%=camp.title  %> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% } %>
+            <script>
+                const camps = {
+                    features: <%-JSON.stringify(Camp)%>
+                }
+            </script>
+            <script src="/clusterMap.js"></script>
