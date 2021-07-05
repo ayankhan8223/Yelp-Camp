@@ -81,7 +81,10 @@ app.use(passport.session())
 passport.use(new LocalStrategy(User.authenticate()))
 passport.serializeUser(User.serializeUser()) //store in the session
 passport.deserializeUser(User.deserializeUser()) //unstore in the session
-
+app.use((req, res, next) => {
+    res.locals.currentUser = req.user;
+    next()
+})
 
 
 
@@ -108,10 +111,7 @@ const validatereview = (req, res, next) => {
         next()
     }
 }
-app.use((req, res, next) => {
-    res.locals.currentUser = req.user;
-    next()
-})
+
 
 
 //user routes
