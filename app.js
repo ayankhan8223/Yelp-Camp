@@ -31,7 +31,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require("helmet");
 const MongoStore = require('connect-mongo');
 
-const dburl = process.nextTick.DB_URL || 'mongodb://localhost:27017/yelp-camp'
+const dburl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp'
 
 // const urlDB = process.env.DB_URL;
 // 'mongodb://localhost:27017/yelp-camp'
@@ -55,7 +55,7 @@ const secret = process.env.SECRET || 'this should be better secret'
 const store = new MongoStore({
     mongoUrl: dburl,
     secret: secret,
-    ttl: 14 * 24 * 60 * 60
+    touchAfter: 24 * 60 * 60
 })
 store.on("error", function(e) {
     console.log("sessions error", e)
