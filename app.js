@@ -76,14 +76,17 @@ const sessionconfig = {
 app.use(session(sessionconfig))
 app.use(flash())
 
+
 app.use(passport.initialize())
 app.use(passport.session())
 passport.use(new LocalStrategy(User.authenticate()))
 passport.serializeUser(User.serializeUser()) //store in the session
 passport.deserializeUser(User.deserializeUser()) //unstore in the session
-app.use((req, res, next) => {
-    res.locals.currentUser = req.user;
-    next()
+app.use((req,res,next)=>{
+    res.locals.success=req.flash("success")
+    res.locals.error=req.flash("error")
+    res.locals.currentUser=req.user
+    next();
 })
 
 
@@ -131,6 +134,7 @@ app.post('/register', catchAsync(async(req, res) => {
         req.flash('success', 'welcome to the yelpcamp')
         res.redirect('/campground')
     } catch (e) {
+
         req.flash('error', e.message)
         res.redirect('/register')
 
@@ -299,7 +303,7 @@ app.post('/campground/:id/reviews', validatereview, catchAsync(async(req, res) =
     camp.review.push(review)
     review.save()
     camp.save()
-    req.flash('success', 'you created a review')
+    req.flash('success', 'successfully created a review')
     res.redirect(`/campground/${camp._id}`)
 
 }))

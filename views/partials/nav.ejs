@@ -42,12 +42,12 @@
                 </li>
             </ul>
             <div class="navbar-nav ml-auto">
-
+<%if(!currentUser){%>
                 <a href="/login" class="nav-link">LOGIN</a>
                 <a href="/register" class="nav-link">REGISTER</a>
-
+<%}else{%>
                 <a href="/logout" class="nav-link">LOGOUT</a>
-
+<%}%>
             </div>
         </div>
     </div>
