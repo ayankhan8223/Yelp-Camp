@@ -312,13 +312,14 @@ app.delete('/campground/:id/review/:reviewId', catchAsync(async(req, res) => {
     res.redirect(`/campground/${id}`)
 
 }))
-app.get('/home', (req, res) => {
+// app.get('/home', (req, res) => {
+//     res.render('campgrounds/home')
+
+// })
+
+app.all('*', (req, res) => {
     res.render('campgrounds/home')
-
-})
-
-app.all('*', (req, res, next) => {
-    next(new ExpressError('page not found', 404))
+   
 })
 app.use((err, req, res, next) => {
     const { message = 'something went wrong', statuscode = 400 } = err
