@@ -1,63 +1,64 @@
 <% layout('/layouts/boilerplate') %>
-    <div class="row">
-        <h1 class="text-center">NEW CAMPGROUND</h1>
-        <div class="col-6 offset-3">
 
-            <form action="/campground" method="POST" novalidate class="validate-form" enctype="multipart/form-data">
-                <div mb-3>
-                    <label class="form-label" for="title">title</label>
-                    <input class="form-control" type="text" name="title" id="title" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
 
+
+
+<div class="container d-flex justify-content-center align-items-center mt-3 mb-3 " >
+    <div class="row" style="margin-bottom: 90px;">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4 ">
+            <div class="card shadow" style="padding: 30px; width: 450x; border-radius: 15px;">
+                <img src="https://images.unsplash.com/photo-1571863533956-01c88e79957e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="" class="card-img-top" style="  border-radius: 18px; box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"/>
+                <div class="card-body " style="margin-top: 30px;">
+                    <h5 class="card-title" style=" margin-left: 30px; font-family: Poppins, sans-serif; letter-spacing: 6px;  ">NEW CAMPGROUND</h5>
+                    <form action="/campground" method="POST" class="validated-form" novalidate enctype="multipart/form-data"> 
+                        <div class="mb-3" style="margin-top: 30px;">
+                            <label class="form-label" for="username" style="font-family: Poppins, sans-serif;">Title</label>
+                            <input class="form-control" type="text" id="username" name="title" style="border-radius: 20px; "  autofocus required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="mb-3" style="margin-top: 20px;">
+                            <label class="form-label" for="location" style="font-family: Poppins, sans-serif">Location</label>
+                            <input class="form-control" type="text" id="location" name="location" style="border-radius: 20px;" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3" style="margin-top: 20px;">
+                            <label class="form-label" for="image" style="font-family: Poppins, sans-serif; margin-top:10px;">Select Images</label>
+                            <input class="form-control" type="file" id="image" name="image" style="border-radius: 20px;" multiple required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="price" style="font-family: Poppins, sans-serif;  margin-top:10px;">price</label>
+                            <div class="input-group ">
+                                <span class="input-group-text" style="border-radius: 20px;">$</span>
+                                <input type="text" class="form-control" id="price" aria-label="Amount (to the nearest dollar)" name="price" style="border-radius: 20px; width: 120px; z-index: 1;" required>
+                                
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3" style="margin-top: 20px;">
+                            <label class="form-label" for="description" style="font-family: Poppins, sans-serif">Description</label>
+                            <textarea class="form-control" type="text" id="description" name="description" style="border-radius: 20px;" cols="30" rows="3" required></textarea>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <button class="btn btn-success col-12" id="hov" style="border-radius: 20px;
+                        margin-top: 15px;
+                        
+                        height: 50px; font-family: Poppins; letter-spacing:3px; ">Add Campground</button>
+                    </form>
                 </div>
-                <div mb-3>
-                    <label class="form-label" for="location">location</label>
-                    <input class="form-control" type="text" name="location" id="location" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="formFileMultiple" class="form-label">select images</label>
-                    <input class="form-control" type="file" id="formFileMultiple" name="image" multiple required>
-                </div>
-
-                <!-- <div mb-3>
-                    <label class="form-label" for="image">image</label>
-                    <input class="form-control" type="text" name="image" id="image" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div> -->
-
-                <div class="mb-3">
-                    <label class="form-label" for="price">price</label>
-                    <div class="input-group ">
-                        <span class="input-group-text">$</span>
-                        <input type="text" class="form-control" id="price" aria-label="Amount (to the nearest dollar)" name="price" required>
-                        <span class="input-group-text">.00</span>
-                    </div>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-                <div mb-3>
-                    <label class="form-label" for="description">description</label>
-                    <textarea class="form-control" type="text" name="description" id="description" cols="30" rows="3" required></textarea>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-
-
-
-                <div class="mt-4">
-                    <button class="btn btn-success">add campground</button>
-                </div>
-
-            </form>
-
+            </div>
         </div>
     </div>
+    
+</div> 

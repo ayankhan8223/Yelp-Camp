@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+
+
+body, html {
+    font-family: 'Assistant', sans-serif;
+    overflow-x: hidden !important;
+    }
+    
+    body {
+    background: black;
+    
+   
+    
+    }
+    
+    .grid{
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+      padding-bottom: 120px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+     
+      
+    }
+    
+    .cardcontainer{
+    max-width: 400px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(64, 64, 64, 0.70);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all 0.4s ease-in-out;
+    margin-top: 70px;
+    align-items: center;
+    height: 650px;
+    }
+    @media screen and (max-width: 2260px) {
+      
+      .content h2{
+        margin-top: -300px;
+        
+        margin-left: 660px;
+        font-size: 9rem;
+      }
+    }
+    .cardcontainer1 .images{
+      
+      height: 600px;
+      padding: 40px;
+      background-color: none;
+      border: none;
+      
+
+    
+    }
+    .cardcontainer1 .images .img{
+      
+     height: 500px;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      border-radius: 20px;
+      margin-top: -30px;
+
+    }
+    #rating{
+      margin-left: 520px;
+    }
+  }
+    
+    @media screen and (max-width: 1160px) {
+      .cardcontainer{
+        margin: 20px;
+      }
+      .content h2{
+        margin-top: -300px;
+        
+        margin-left: 450px;
+        font-size: 8rem;
+      }
+      #rating{
+        margin-left: 400px;
+      }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .cardcontainer{
+        margin: 20px;
+        padding: 40px;
+        margin-top: 70px;
+      
+        
+      }
+      .content h2{
+        font-size: 4rem;
+        margin-top: -300px;
+        margin-left: 235px;
+        
+      }
+      #cluster-map {
+        width: 100%;
+        height: 500px;
+    border-radius:20px;
+    margin-top: 70px;
+    
+    }
+    #rating{
+      margin-left: 110px;
+    }
+    .button1{
+      width: 100%;
+    }
+    .cardcontainer1 .images{
+      
+      height: 400px;
+      
+      
+      border: none;
+      width: 400px;
+      margin-bottom: 50px;
+    }
+    .cardcontainer1 .images .img{
+      
+      height: 380px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       border-radius: 20px;
+       margin-top: -35px;
+       width: 400px;
+ 
+     }
+    }
+    
+    .cardcontainer:hover{
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: dodgerblue;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 74px 75px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateY(-15px);
+    }
+    
+    .cardcontainer img {
+      width: 370px;
+      border-radius: 15px;
+      border: 1px solid rgba(0, 0, 0, 0.40);
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 1);
+      filter: grayscale(100%);
+      transition: all 0.4s ease-in-out;
+      height: 170px;
+    }
+    
+    .cardcontainer:hover img{
+      filter: grayscale(0%);
+      border: 1px solid rgba(255, 255, 255, 0);
+      transition: all 0.4s ease-in-out;
+    }
+    
+    .cardcontainer h1{
+      line-height: 150%;
+      font-size: 150%;
+      margin-top: 30px;
+     
+     
+    
+    }
+    
+    .bottomline{
+      display: flex;
+      flex-direction: row;
+      justify-content: between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    
+    .links{
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    
+    .links::before {
+      content: "SHARE";
+      position: relative;
+      bottom: 30px;
+      left: 130px;
+      opacity: 0.4;
+    }
+    
+    .cardcontainer svg{
+      padding-left: 10px;
+      transition: all 0.4s ease-in-out;
+      fill: dodgerblue;
+    }
+    
+    .cardcontainer:hover svg{
+      color: white;
+      transition: all 0.4s ease-in-out;
+      fill: white;
+    }
+    
+    .cardbutton{
+      background: dodgerblue;
+      color: white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      text-decoration: none;
+      font-size: 14pt;
+      font-weight: 500;
+      padding: 8px 12px 8px 12px;
+      display: inline-block;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+      border-radius: 10px;
+      width: 120px;
+      justify-content: center;
+    }
+    
+    .cardbutton:hover{
+      transform: translateY(-4px) scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .cardcontainer:hover .cardbutton{
+      background: #ff9e00;
+      color:white;
+      transition: all 0.4s ease-in-out;
+    }
+    
+    .cardcontainer p{
+      position: relative;
+      bottom: 10px;
+      line-height: 130%;
+      font-size: 11pt;
+      margin-top: 30px;
+    }
+    
+    .cardcontainer svg:hover{
+      transform: translateY(5px);
+      transition: all 0.3s ease-in-out;
+    }
+    .bottomline{
+      margin-top: -45px;
+    }
+    .bottomline h2{
+        text-transform: capitalize;
+        font-size: 18px;
+        color: #cbc0d3;
+      
+    }
+    .bottomline .location{
+      margin-top: 30px;
+        margin-left:70px;
+    }
+    .bottomline p{
+      margin-top: 15px;
+  }
+  .bottomline{
+    margin-top: 5px;
+  }
+   /* custom scroller */
+        
+   ::-webkit-scrollbar {
+    width: 12px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: dodgerblue;
+    border-radius: 20px;
+}
+
+
+/* title */
+.content {
+	position: relative;
+  font-family: "Poppins", sans-serif;
+
+ 
+}
+
+.content h2 {
+	color: #fff;
+	/* font-size: 8em; */
+	position: absolute;
+	transform: translate(-50%, -50%);
+  /* margin-top: -300px;
+  margin-left: 600px; */
+
+  
+}
+
+
+.content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+	color: #03a9f4;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+#hov{
+  background-color: dodgerblue;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 74px 75px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: none;
+}
+#hov:hover{
+  background-color: #ff9e00;
+}
+ .cardcontainer1{
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(64, 64, 64, 0.70);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all 0.4s ease-in-out;
+    } 
+ 
+    
+    .cardcontainer1:hover{
+    
+    background: dodgerblue;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 74px 75px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateY(-15px);
+    }
+    
+
+
+
+    .cardcontainer1{
+    
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid rgba(64, 64, 64, 0.70);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transition: all 0.4s ease-in-out;
+      } 
+      
+      .cardcontainer1:hover{
+      
+      background: dodgerblue;
+      color: white;
+      transition: all 0.4s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 74px 75px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transform: translateY(-15px);
+
+    
+      }
+      
+      .button1{
+        background: dodgerblue;
+        color: white;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        text-decoration: none;
+        font-size: 14pt;
+        font-weight: 500;
+        padding: 8px 12px 8px 12px;
+        display: inline-block;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+        border-radius: 10px;
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .button1:hover{
+        transform: translateY(-4px) scale(1.05);
+        transition: all 0.3s ease-in-out;
+        color: white;
+      }
+      
+      .cardcontainer1:hover .button1{
+        background: #ff9e00;
+        color:white;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .cardcontainer2{
+    
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid rgba(64, 64, 64, 0.70);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: all 0.4s ease-in-out;
+        } 
+        
+        .cardcontainer2:hover{
+        
+       color: black;
+        transition: all 0.4s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 74px 75px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: translateY(-15px);
+  
+      
+        }
+       
+        .cardcontainer1:hover .cardcontainer2{
+       
+          color: black;
+          
+        }
+      

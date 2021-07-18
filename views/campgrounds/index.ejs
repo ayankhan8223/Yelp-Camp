@@ -1,41 +1,59 @@
 <% layout('/layouts/boilerplate') %>
 
+   <div class="grid">
+   
+      <div class="content">
+        
+        <h2>Campgrounds</h2>
+        <h2>Campgrounds</h2>
+      
+      </div>
     
+
     <div id="cluster-map"></div>
-    <h1>All CAMPGROUND</h1>
-
-
+    
+    
     <% for(let camp of Camp) {%>
+    <div class="cardcontainer">
 
-        <div class="card" mb-3>
-            <div class="row">
-                <div class="col-md-4">
-                    <% if(camp.image.length){ %>
-                        <img class="img-fluid" alt="" src='<%= camp.image[0].url %>'>
-                        <% }else{ %>
-                            <img class="img-fluid" alt="" src='https://res.cloudinary.com/dgwj4ybds/image/upload/v1624391779/yelpcamp/kcwgoqaz8gudrhzmgxr7.jpg'>
-                            <% } %>
-                </div>
 
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <%=camp.title %>
-                        </h5>
+        <% if(camp.image.length){ %>
+            <img class="img-fluid" alt="" src='<%= camp.image[0].url %>'>
+            <% }else{ %>
+                <img class="img-fluid" alt="" src='https://res.cloudinary.com/dgwj4ybds/image/upload/v1624391779/yelpcamp/kcwgoqaz8gudrhzmgxr7.jpg'>
+                <% } %>
 
-                        <p class="card-text">
-                            <%=camp.description %>
-                        </p>
-                        <p class="card-text">
-                            <small class="text-muted"><%=camp.location %></small>
-                        </p>
-                        <a class="btn btn-primary" href="/campground/<%=camp._id%>">view <%=camp.title  %> </a>
-                    </div>
-                </div>
+
+      
+           <h1><%=camp.title %></h1>
+            
+          <p>  <%=camp.description %></p>
+          
+          <div class="bottomline">
+          
+            <div>
+          <a href="/campground/<%=camp._id%>" class="cardbutton">Learn More</a>
             </div>
+            
+           <div class="location">
+               <h2>LOCATION</h2>
+               <p><%=camp.location %></p>
+           </div> 
+            
+          </div>
+            
         </div>
+    
 
         <% } %>
+       
+
+
+
+  </div>
+
+    
+    
             <script>
                 const camps = {
                     features: <%-JSON.stringify(Camp)%>

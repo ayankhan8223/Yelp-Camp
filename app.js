@@ -128,7 +128,7 @@ app.post('/register', catchAsync(async(req, res) => {
         const registeredUser = await User.register(user, password)
         req.login(registeredUser, function(err) {
             if (err) { return next(err); }
-            return req.flash('success', 'welcome to the yelpcamp')
+            // return req.flash('success', 'welcome to the yelpcamp')
             res.redirect('/campground')
         });
         req.flash('success', 'welcome to the yelpcamp')
