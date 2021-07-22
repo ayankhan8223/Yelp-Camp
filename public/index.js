@@ -11,7 +11,7 @@ window.addEventListener('scroll', function(){
 
 let value = window.scrollY;
     
-text.style.top = 45 + value * -0.1 + '%';
+text.style.top =44 + value * -0.1 + '%';
 bird1.style.top = 10 + value * -0.2 + 'px';
 bird1.style.left = value * 1.3 + 'px';
 bird2.style.top = 50 + value * -0.5 + 'px';
@@ -21,5 +21,5 @@ rocks.style.top = value * -0.12 + 'px';
 forest.style.top = value * 0.25 + 'px';
 
 header.style.top = value * 0.5 + 'px';
-
+console.log(value)
 })

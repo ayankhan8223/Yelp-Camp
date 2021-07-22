@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="\home.css">
-</head>
 <body>
     <header id="header">
         
-        <a href="#" class="logo">Camp-Alpha </a>
-        <ul>
+      <a href="#" class="logo">Yelp Camp</a>
+        
+        <ul >
           <li><a href="#" class="active">Home</a></li>
           <li><a href="/campground">Campgrounds</a></li>
           <% if(!currentUser) { %>
-          <li>  <a href="/login">Login</a></li>
+          <li><a href="/login">Login</a></li>
           <li><a href="/register">Register</a></li>
           <% } else { %>
             <li> <a  href="/logout">Logout</a></li>
             <% } %>
         </ul>
+        
       </header>
       
       <section>
@@ -39,19 +43,136 @@
         <img src="water.png" alt="water" id="water">
         
       </section>
-      <div class="sec">
-        <h2>Parallax scrolling effect</h2>
-        <p><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.
-      <br><br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.
-      <br><br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.
-      <br><br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.
-      <br><br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ornare massa. Phasellus eu molestie mi. Aliquam erat volutpat. Nam venenatis, ipsum ut dignissim placerat, augue erat mollis dui, ut faucibus orci ipsum sed sem. Ut in ex vel nulla tincidunt scelerisque. Vivamus viverra bibendum lobortis. Sed semper tincidunt sollicitudin.</p>
-      </div>
+      
+      <div class="sec" >
+        
+        <h2>Welcome to the YelpCamp</h2>
+
+
+       
+
+
+
+
+     <div class="flexContainer">
+       <div class="flexItems1">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner images">
+            <div class="carousel-item active ">
+              <img src="/camp1.jfif" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Oregon</h5>
+                <p> Eugene, Oregons </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="camp2.jfif" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Wyoming</h5>
+                <p>Powell, Wyoming</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="camp3.jfif" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>luxury campsite - Washington</h5>
+                <p>Leavenworth, Washington</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+
+
+
+
+        
+       </div>
+     
+     </div>
+     <h2 style="margin-top: 60px;">why camping is important</h2>
+
+     
+
+<div class="container">
+  <div class="items1">
+    <img src="\BIG4 Wallaga Lake Holiday Park_2.jpg" alt="" class="image">
+  </div>
+  <div class="items2">
+    <h2 class="h2"> <span class="sno">1. </span>Camping helps with problem solving</h2>>
+    <p>Sometimes camping and its associated activities present you with challenges; some that not even Google can reliably solve!
+      Often these are challenges not encountered on a daily basis: How to set up a tent or deal with scenarios where you aren’t armed with mod-cons or familiar surrounds.
+      In addition, camping often introduces you to new experiences, possibly an activity you’ve been meaning to try but have never got around to.
+      Whatever the case, there is plenty of research that suggests tackling new challenges and experiences can keep our brains healthy, as they force us to think for ourselves. Better yet, they can enhance self-confidence, growth, and happiness, too.</p>
+  </div>
+
+
+  <div class="items1">
+    <img src="\BIG4 Renmark Riverfront Holiday Park_1.jpg" alt="" class="image">
+  </div>
+  <div class="items2">
+    <h2 class="h2"><span class="sno">2. </span> Camping is great for children’s education</h2>
+    <p class="p">Following the above point, camping can have direct positive impacts on children’s development. And in the age of smart phones and tablets and other technology, this is even more pertinent.
+
+      Many kids are likely more confident navigating their way around an iPad searching for Bluey or Peppa Pig videos, or watching YouTube, than they are navigating the inside of a tent.
+      
+      Yet camping introduces children to a whole new world and asks of them an ability to overcome new problems and challenges.
+      
+      Having exposure to a different set of challenges not only keeps kids’ brains healthy but leads to increased learning opportunities.
+      
+      A UK study from the Institute of Education at Plymouth University found an overwhelming majority of parents believed that camping had a positive impact on a child's education. Further social commentary supports this claim.</p>
+  </div>
+  <div class="items1">
+    <img src="\img3.jpg" alt="" class="image">
+  </div>
+  <div class="items2">
+    <h2 class="h2"><span class="sno">3. </span>Camping can help you sleep better</h2>
+    <p>Research from the University of Colorado Boulder found that camping can reset our biological clocks and help those of us who find it tough to get to sleep and/or wake up in the morning.
+
+      In short, it’s a result of the increased use of artificial light in our daily lives and the fact that camping can help us to adjust to the natural light-dark cycle if we're given that chance.
+      
+      Receiving adequate sleep has long been touted as critical to our overall health and wellbeing. Plus, aren’t we all much better company when we aren’t tired and grumpy?!</p>
+  </div>
+
+
+  <div class="items1">
+    <img src="\img4.jpg" alt="" class="image">
+  </div>
+  <div class="items2">
+    <h2 class="h2"><span class="sno">4. </span> Camping increases your vitamin D intake</h2>
+    <p>There are no guarantees with this one – some people are convinced that simply muttering the words, “let’s go camping” triggers a downpour. But camping often means more time in the sun.
+
+      And more of those rays means extra vitamin D, which has benefits for you.
+      
+      While much research exists to say that some benefits remain inconclusive, there appears to be agreement that it does aid bone health. Furthermore, the Medical Journal of Australia states that exposure to sunlight is the main source of vitamin D for Australian residents.
+      
+      Sun exposure has also been linked to mental health benefits, such as improved moods. However, this all comes with a caveat: Direct sun exposure should be taken in moderation and adequate protection should be used to minimise the risk of skin cancer.</p>
+  </div>
+  
+  </div>
+
+
+
+
+<a href="/campground" class="button">let's Explore</a>
+  
+
 
     <script src="index.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

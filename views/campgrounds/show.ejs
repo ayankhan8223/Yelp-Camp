@@ -22,16 +22,16 @@
                         </div>
                         <% if(camp.image.length>1){ %>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
                             <% } %>
-               </div> 
-                       <h5  class="card-title" style="font-family: Poppins, sans-serif; text-align: center; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; ">
+               
+                       <h5  class="card-title" style="font-family: Poppins, sans-serif; text-align: center; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-top: 40px; ">
                         <%=camp.title  %>
                       </h5>
                     <p class="card-text" style="font-family: Poppins, sans-serif; text-align: center; ">
@@ -70,10 +70,10 @@
 
 
                             <% if(currentUser){ %>
-                                <div class="mb-3" style="font-family: Poppins; margin-top: 70px;"  >
+                                <div class="mb-3" style="font-family: Poppins;"  >
                                     <h2 style="text-align: center; font-weight: 500;">leave a review</h2>
                         
-                                    <form action="/campground/<%=camp._id  %>/reviews" method="POST" class="mb-3 validate-form" novalidate>
+                                    <form action="/campground/<%=camp._id %>/reviews" method="POST" class="mb-3 validate-form" novalidate>
                                         <!-- <div class="mb-3">
                                             <label for="rating" class="form-label"> rating</label>
                                             <input class="form-range" type="range" name="rating" id="rating" min="1" max="5">
@@ -107,11 +107,11 @@
                                         
                                     </form>
                                     <% } %>
-                                        <div class="mbt-3">
+                                        <div class="mb-3">
                                             <% for(let review of camp.review){ %>
                                                 <div class="mb-3 card cardcontainer2" style="margin-top: 80px;" >
                                                     <div class=" card-body " >
-                                                        <h5 class="jkl"> 
+                                                        <h5> 
                                                             <%=review.author.username%>
                                                         </h5>
                         
