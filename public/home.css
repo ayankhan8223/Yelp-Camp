@@ -252,7 +252,8 @@ justify-content: center;
        
   }
  .container{
-  margin-left: -70px;
+  margin-left: -80px;
+
  }
  .container .image{
    width: 260px;
@@ -267,10 +268,13 @@ justify-content: center;
   margin-bottom: 40px;
  
  }
+ .container p{
+   font-size: 10px;
+ }
 
  
 .items2 .h2{
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
 }
 
